@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <%- include("./header.ejs"); %>
+
+        <main id="main">
+            <div id="principal" class="cent">
+
+                <% console.log(dados[0]); %>
+
+                <table border="1" id="tabadm">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Senha</th>
+                        <th>Deletar</th>
+                    </tr>
+                    <% for(let i = 0; i < dados.length; i++) { %>
+                    <tr>
+                        <td><%=dados[i].id%></td>
+                        <td><%=dados[i].nome%></td>
+                        <td><%=dados[i].email%></td>
+                        <td><%=dados[i].senha%></td>
+                        <td>
+                            <form action="/delet" method="POST">
+                                <input type="hidden" value="<%=dados[i].token%>" name="token">
+                                <input type="hidden" value="e1aa28844ce0b036eb2a31htrgrrgroglmvbrçlgmǵma02cb2223c34048b2b48ac20480a253f82167aa3d31142cbb9932a09dd5248" name="adm">
+                                <input type="submit" style="cursor: pointer;" value="Deletar">
+                            </form>
+                            
+                        </td>
+                    </tr>
+
+                    <% } %>
+                </table>
+
+                <hr><hr>
+
+                <form action="/adm/createlist" method="post">
+                    <input type="text" name="name" value="Dicas">
+                    <input type="text" name="company" value="Green Life">
+                    <input type="text" name="address" value="Rua Nova">
+                    <input type="text" name="city" value="São Paulo">
+                    <input type="text" name="state" value="São Paulo">
+                    <input type="text" name="zip" value="00000-000">
+                    <input type="text" name="country" value="Brasil">
+                    <input type="text" name="from_name" value="Green Life Sustentável">
+                    <input type="text" name="from_email" value="greenlifesustentavel@gmail.com">
+                    <input type="text" name="subject" value="Tenha uma vida Sustentável">
+                    <input type="text" name="language" value="pt-br">
+                    <input type="submit" value="Enviar Dados">
+                </form>
+                
+                <button onclick="window.location.href='/'" class="btnadm">Logoff</button>
+
+            </div>
+
+            
+            <%- include("./menu.ejs"); %>
+            
+        </main>
+
+    </body>        
+
+    <footer class="blc" id="footer"> 
+        <div id="back-wave">
+            
+        </div>
+        <label>Green Life<br><br>
+            <label class="foot_mob">
+                <span><a href="/qs?token=<%=token%>">Quem Somos?</a></span><br>
+                <span><a href="/qs?token=<%=token%>#mis">Missão</a></span>
+                <span><a href="/qs?token=<%=token%>#vis">Visão</a></span>
+                <span><a href="/qs?token=<%=token%>#val">Valores</a></span>
+            </label> <br><br>
+            <label class="fale">
+                <span> Fale Conosco: </span>
+                <br><br>
+                <span><a href="https://www.instagram.com/greenlifesustentavel">Instagram</a></span>
+                <span><a href="https://mailto:greenlifesustentavel@gmail.com">Email</a></span>
+                <span><a href="tel:(380)946917200">Telefone</a></span>
+                <span><a href="https://wa.me/+380946917200">Whatsapp</a></span>
+            </label>
+        </label>
+    </footer>
+
+    <%- include("./scripts.ejs"); %>
+
+</html>

@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Green Life </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (orientation:landscape)" href="/desktop.css">
+    <link rel="stylesheet" media="screen and (orientation:portrait)" href="/mobile.css">
+    <link rel = "shortcut icon" type = "image/png" href = "/img/icone.png" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"></link>
+   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"></link>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="/img/logo.png" onclick="window.location.href='/?token=<%=token%>'" alt="Logo" id="logo"></img>
+        <form action="/query?token=<%=token%>" id="mob_pesq" method="get">
+            <input type="text" placeholder="Pesquise aqui..." name="q" id="input" required>
+            <input type="hidden" name="token" value="<%=token%>">
+            <input type="submit" value="🔍">
+        </form>
+        <div id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav_links" onclick="window.location.href='/qs?token=<%=token%>'">
+            <a href="/qs?token=<%=token%>">Quem Somos?</a>
+        </div>
+        <div class="nav_links" onclick="window.location.href='/qs?token=<%=token%>#mis'">
+            <a href="/qs?token=<%=token%>#mis">Missão</a>
+        </div>
+        <div class="nav_links" onclick="window.location.href='/qs?token=<%=token%>#vis'">
+            <a href="/qs?token=<%=token%>#vis">Visão</a>
+        </div>
+        <div class="nav_links" onclick="window.location.href='/qs?token=<%=token%>#val'">
+            <a href="/qs?token=<%=token%>#val">Valores</a>
+        </div>
+    </nav>

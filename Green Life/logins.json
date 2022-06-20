@@ -1,0 +1,52 @@
+{
+  "adm": [
+    {
+      "id": 1,
+      "nome": "root",
+      "email": "adm@root.com",
+      "senha": "root@root",
+      "token": "e1aa28844ce0b036eb2a31htrgrrgroglmvbrçlgmǵma02cb2223c34048b2b48ac20480a253f82167aa3d31142cbb9932a09dd5248"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Claudino",
+      "email": "claudinho_gameplays@hotmail.com",
+      "senha": "claudinho123",
+      "image": "ftPerfil.png"
+    },
+    {
+      "nome": "Fabio",
+      "email": "fs7079939@gmail.com",
+      "senha": "senha",
+      "image": "ftPerfil.png",
+      "token": "356b261d43df4a3cec64eeffade04caf9370dd36c7eebf8959acc27a633544a0941f49e231d0cdbe0ad99e347135e281d78c",
+      "id": 6
+    },
+    {
+      "nome": "Larissa Pardim",
+      "email": "larissapardim.lima@gmail.com",
+      "senha": "1234",
+      "image": "ftPerfil.png",
+      "token": "f221d73a43d0adc9e54998804d0b189760714d7c638fc513c90f378ef6275fd8cb1225b9504a3735554b96d6c377a239614a",
+      "id": 11
+    },
+    {
+      "nome": "Wms ",
+      "email": "Weslleymarques303@gmail.com",
+      "senha": "teste123",
+      "image": "ftPerfil.png",
+      "token": "c4e99d6b89e63fd3b26540b73a446ba5a3e9c8c3a841a798c8373f89b508b5fbbd38efcbeb74e6ac72a6d0cad8e76efb073a",
+      "id": 13
+    },
+    {
+      "nome": "Weslley Marques Santos ",
+      "email": "wmsaluno@gmail.com",
+      "senha": "teste1234",
+      "image": "ftPerfil.png",
+      "token": "8bb74c041e55af464d88fe9da58e1157ed9ec8a321ef00368ac5498557a50a2361b9bfa798e512915cd5625ec94b25ef365b",
+      "id": 14
+    }
+  ]
+}

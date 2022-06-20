@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <%- include("./header.ejs"); %>
+        <main id="main">
+            <div id="principal" class="blc cent">
+                
+                <section class="cont">
+
+                    <% for (let i = 0; i < dados.length; i++) { %>
+                        <div class="qry" onclick="window.location.href='<%=dados[i].link%>?token=<%=token%><%=dados[i].trecho%>'">
+                            <label>
+                                <h3><%=dados[i].titulo%></h3><br>
+                                <span><%=dados[i].conteudo%></span>
+                            </label>
+                        </div><br><br>
+                    <% } %>
+                
+                </section>
+            </div>
+            <%- include("./menu.ejs"); %>
+        </main>
+    </body>
+
+    <article>
+        <div class="icons">
+            <img src="/img/inst.jpeg" onclick="window.location.href='https:\/\/www.instagram.com/greenlifesustentavel'" alt="instagram">
+            <img src="/img/email.png" onclick="window.location.href='https:\/\/mailto:greenlifesustentavel@gmail.com'" alt="email">
+        </div>
+    </article>
+    <footer class="blc" id="footer"> 
+        <div id="back-wave">
+            
+        </div>
+        <label>Green Life<br><br>
+            <label class="foot_mob">
+                <span><a href="/qs?token=<%=token%>">Quem Somos?</a></span><br>
+                <span><a href="/qs?token=<%=token%>#mis">Missão</a></span>
+                <span><a href="/qs?token=<%=token%>#vis">Visão</a></span>
+                <span><a href="/qs?token=<%=token%>#val">Valores</a></span>
+            </label> <br><br>
+            <label class="fale">
+                <span> Fale Conosco: </span>
+                <br><br>
+                <span><a href="https://www.instagram.com/greenlifesustentavel">Instagram</a></span>
+                <span><a href="https://mailto:greenlifesustentavel@gmail.com">Email</a></span>
+                <span><a href="tel:(380)946917200">Telefone</a></span>
+                <span><a href="https://wa.me/+380946917200">Whatsapp</a></span>
+            </label>
+        </label>
+    </footer>
+    <%- include("./scripts.ejs"); %>
+</html>

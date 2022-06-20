@@ -1,0 +1,99 @@
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+//==========================================================================================================//
+            //funções responsáveis pelo menu
+
+            const menu = document.querySelector("#menu");
+            const divMenu = document.querySelector("#divMenu");
+            const divPrinc = document.querySelector("#principal");
+            const footer = document.querySelector("#footer");
+            const icons = document.querySelector(".icons")
+
+            menu.addEventListener("click", () => {
+                menu.classList.toggle("active");
+                setTimeout(function(){
+                    divMenu.classList.toggle("rem");
+                },100);
+                setTimeout(function(){
+                    divMenu.classList.toggle("ativado");
+                    divPrinc.classList.toggle("ocult");
+                    divPrinc.classList.toggle("blc");
+                    footer.classList.toggle("ocult");
+                    footer.classList.toggle("blc");
+                    icons.classList.toggle("ocult");
+                },200);
+                divPrinc.classList.toggle("ocultar");
+                footer.classList.toggle("ocultar");
+            });
+
+            //End das funções responsáveis pelo menu
+    
+//==========================================================================================================//
+
+            
+
+</script>
+
+            <% if (nome != "") { %>
+
+                <script>
+
+            //funções responsáveis pelo formulario
+
+                    //funções para ocultar caso ja esteja logado
+
+                    const form = document.querySelector("#divForm");
+
+                    form.classList.toggle("ocult");
+                    form.classList.toggle("divForm");
+                    
+                </script>
+
+            <% } else { %>
+
+                <script>
+                    const nav = document.querySelector("#nav");
+                    nav.classList.toggle("ocult");
+
+                    //end das funções de ocultar caso esteja logado
+                </script>
+
+            <% } %>
+
+<script>
+
+                //funções para mudar cad/log
+
+                const muda = document.querySelector("#muda");
+                const muda2 = document.querySelector("#muda2");
+                const cad = document.querySelector("#cad");
+                const formu = document.querySelector("#form")
+                const log = document.querySelector("#log");
+                const formu2 = document.querySelector("#form2");
+
+                muda.addEventListener("click", () => {
+                    formu.classList.toggle("ocult");
+                    cad.classList.toggle("ocult");
+                    formu2.classList.toggle("ocult");
+                    log.classList.toggle("ocult");
+                });
+
+                muda2.addEventListener("click", () => {
+                    formu.classList.toggle("ocult");
+                    cad.classList.toggle("ocult");
+                    formu2.classList.toggle("ocult");
+                    log.classList.toggle("ocult");
+                });
+
+//==========================================================================================================//
+
+            //funções responsáveis pelo logoff
+
+            function deslog(){
+                console.log("teste")
+                axios.get(`http://localhost:3000/deslog`);
+            }
+
+//==========================================================================================================//
+</script>

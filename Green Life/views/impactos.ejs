@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <%- include("./header.ejs"); %>
+
+        <main id="main">
+            <div id="principal" class="blc">
+                <img class="banner" src="/img/bannerImpactosAmbientais.jpeg" alt="Imagem Impactos Ambientais">
+                <section class="ctr">
+                    <label>
+
+                        <h1> Impactos Ambientais </h1>
+
+                        <p>Impactos ambientais são alterações no ambiente causadas pelo desenvolvimento das
+                            atividades humanas. Nesse sentido, eles podem ser positivos, quando resultam em
+                            melhorias para o ambiente, ou negativos, quando essas alterações causam algum risco para o ser humano ou para os recursos naturais. 
+                        </p>
+
+                        <p> Apesar de possuir essas duas classificações, o termo impacto ambiental é mais utilizado em referência aos aspectos negativos das atividades humanas sobre a natureza. Isso ocorre em virtude do modelo de desenvolvimento da sociedade moderna, que se baseou na exploração intensiva dos recursos naturais do mundo, que são vistos como uma fonte inesgotável de matéria-prima e de energia para a produção dos mais diversos produtos. </p>
+
+                        <h2 id="prinIA"> Principais impactos ambientais </h2>
+
+                        <p> Dentre os principais impactos ambientais negativos causados pelo ser humano, pode-
+                            se citar: 
+                        </p>
+
+                        <p> <ul>
+                            <li> Diminuição dos mananciais; </li>
+                            <li> Extinção de espécies; </li>
+                            <li> Inundações; </li>
+                            <li> Erosões; </li>
+                            <li> Poluição – poluição do ar, do solo, da água; </li>
+                            <li> Destruição da camada de ozônio; </li>
+                            <li> Intensificação do efeito estufa; </li>
+                            <li> Chuva ácida; </li>
+                            <li> Agravamento das mudanças climáticas; </li>
+                            <li> Perda de biodiversidade; </li>
+                            <li> Queimadas; </li>
+                            <li> Desmatamentos; </li>
+                            <li> Desertificação. </li>
+                        </ul> </p>
+
+                        <h2 id="dimiIA"> Como minimizar e diminuir os impactos ambientais? </h2>
+
+                        <p>Os impactos ambientais podem ser diminuídos através de ações individuais e  coletivas, bem como por meio de leis e políticas ambientais. Algumas ações que podem ser feitas, são elas: 
+                        </p>
+
+                        <p> <ul>
+                            <li> Replantio de floresta em áreas desmatadas; </li>
+                            <li> Separação, descarte adequado e reciclagem do lixo; </li>
+                            <li> Economia de água; </li>
+                            <li> Utilização de transportes coletivos; </li>
+                            <li> Utilização de produtos biodegradáveis; </li>
+                            <li> Redução do consumo. </li>
+                        </ul> </p>
+
+                        <h2 id="euIA"> As minhas atividades diárias também provocam impactos ambientais? </h2>
+
+                        <img src="/img/fror.png" alt="[imagem]Como ter uma vida sustentavel: ">
+
+                        <p> Ao descartarmos inadequadamente nosso lixo, estamos impactando negativamente nosso planeta. 
+                        </p>
+
+                        <p> A resposta para essa pergunta é sim. Nossas atividades, mesmo que pequenas, causam impactos no planeta. O desperdício de água e a não separação do nosso lixo são atitudes comuns que podem contribuir, por exemplo, para o desabastecimento de água e para o aumento da poluição do planeta. Para reduzir nossos impactos negativos, podemos adotar algumas atitudes simples no nosso dia a dia, como: 
+                        </p>
+
+                        <p> <ul>
+                            <li> Evitar o desperdício de água; </li>
+                            <li> Reduzir o uso de automóveis; </li>
+                            <li> Economizar energia elétrica; </li>
+                            <li> Separar o lixo orgânico do reciclável; </li>
+                            <li> Não jogar lixo no chão; </li>
+                            <li> Não comprar animais silvestres; </li>
+                            <li> Reduzir o consumismo. </li>
+                        </ul> </p>
+
+                    </label>
+                </section>
+            </div>
+
+            <%- include("./menu.ejs"); %>
+
+        </main>
+
+    </body>
+
+    <article>
+        <div class="icons">
+            <img src="/img/inst.jpeg" onclick="window.location.href='https:\/\/www.instagram.com/greenlifesustentavel'" alt="instagram">
+            <img src="/img/email.png" onclick="window.location.href='https:\/\/mailto:greenlifesustentavel@gmail.com'" alt="email">
+        </div>
+    </article>
+
+    <footer class="blc" id="footer"> 
+        <div id="back-wave">
+            
+        </div>
+        <label>Green Life<br><br>
+            <label class="foot_mob">
+                <span><a href="/qs?token=<%=token%>">Quem Somos?</a></span><br>
+                <span><a href="/qs?token=<%=token%>#mis">Missão</a></span>
+                <span><a href="/qs?token=<%=token%>#vis">Visão</a></span>
+                <span><a href="/qs?token=<%=token%>#val">Valores</a></span>
+            </label> <br><br>
+            <label class="fale">
+                <span> Fale Conosco: </span>
+                <br><br>
+                <span><a href="https://www.instagram.com/greenlifesustentavel">Instagram</a></span>
+                <span><a href="https://mailto:greenlifesustentavel@gmail.com">Email</a></span>
+                <span><a href="tel:(380)946917200">Telefone</a></span>
+                <span><a href="https://wa.me/+380946917200">Whatsapp</a></span>
+            </label>
+        </label>
+    </footer>
+
+    <%- include("./scripts.ejs"); %>
+</html>

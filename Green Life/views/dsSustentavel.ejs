@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <%- include("./header.ejs"); %>
+        <main id="main">
+            <div id="principal" class="blc">
+                
+                <section class="ctr">
+                    <label>
+                        <h1> Desenvolvimento Sustentável </h1>
+                        <p>O conceito de desenvolvimento sustentável envolve várias áreas, buscando um
+                            ponto de equilíbrio entre o crescimento econômico, equidade social e a
+                            proteção do ambiente. Trata-se de um conceito sistêmico de um modelo de
+                            desenvolvimento global que incorpora os aspectos de desenvolvimento
+                            ambiental que tem como compromisso a preservação dos recursos naturais
+                            como essência da sustentabilidade.
+                        </p>
+
+                        <p> Em setembro de 2015, por ocasião da Cúpula das Nações Unidas para o
+                            Desenvolvimento Sustentável, realizada em Nova York, foi estabelecido um
+                            conjunto de 17 Objetivos para o Desenvolvimento Sustentável, os chamados
+                            ODS, a serem implementados por todos os países do mundo até 2030 para se
+                            atingir o desenvolvimento sustentável. As metas determinadas são: 
+                        </p>
+
+                        <img  class="exc" src="/img/ds2.png" alt="[imagem]DS Sustentável: "><br>
+
+                        <p>O desenvolvimento sustentável é importante para, por um lado, assegurar o
+                            melhor manejo dos recursos naturais de forma que eles não se esgotem, e que
+                            seja possível atender às necessidades das gerações presentes e futuras. Por
+                            outro lado, sua importância reside no fato de as práticas atreladas a esse
+                            modelo objetivarem a redução dos impactos ambientais e do agravamento dos
+                            fenômenos climáticos extremos, além de promover o alcance de uma melhor
+                            qualidade de vida às diversas populações que habitam o planeta Terra.
+                        </p>
+                    </label>
+                </section>
+            </div>
+            <%- include("./menu.ejs"); %>
+        </main>
+    </body>
+
+    <article>
+        <div class="icons">
+            <img src="/img/inst.jpeg" onclick="window.location.href='https:\/\/www.instagram.com/greenlifesustentavel'" alt="instagram">
+            <img src="/img/email.png" onclick="window.location.href='https:\/\/mailto:greenlifesustentavel@gmail.com'" alt="email">
+        </div>
+    </article>
+    <footer class="blc" id="footer"> 
+        <div id="back-wave">
+            
+        </div>
+        <label>Green Life<br><br>
+            <label class="foot_mob">
+                <span><a href="/qs?token=<%=token%>">Quem Somos?</a></span><br>
+                <span><a href="/qs?token=<%=token%>#mis">Missão</a></span>
+                <span><a href="/qs?token=<%=token%>#vis">Visão</a></span>
+                <span><a href="/qs?token=<%=token%>#val">Valores</a></span>
+            </label> <br><br>
+            <label class="fale">
+                <span> Fale Conosco: </span>
+                <br><br>
+                <span><a href="https://www.instagram.com/greenlifesustentavel">Instagram</a></span>
+                <span><a href="https://mailto:greenlifesustentavel@gmail.com">Email</a></span>
+                <span><a href="tel:(380)946917200">Telefone</a></span>
+                <span><a href="https://wa.me/+380946917200">Whatsapp</a></span>
+            </label>
+        </label>
+    </footer>
+    <%- include("./scripts.ejs"); %>
+</html>
