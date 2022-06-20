@@ -1,2 +1,5 @@
 #ignora o projeto com upload manual
 Green-Life
+
+#ignora os arquivos de modulos
+node_modules/
